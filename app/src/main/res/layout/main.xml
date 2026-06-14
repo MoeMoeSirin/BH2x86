@@ -1,0 +1,66 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- 标题标签 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="崩坏学园2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABI 切换工具"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="32dp" />
+	
+    <!-- 显示当前架构的标签 -->
+    <TextView
+        android:id="@+id/archText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前架构: 加载中..."
+        android:textSize="18sp"
+        android:layout_marginBottom="48dp" />
+
+    <!-- 改x86按钮 -->
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改x86"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 还原按钮 -->
+    <Button
+        android:id="@+id/btnRestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="还原"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 占位View，将作者标签推到底部 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 作者标签 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By 萌哒萌西琳"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
